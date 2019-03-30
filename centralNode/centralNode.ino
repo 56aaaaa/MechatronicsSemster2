@@ -38,7 +38,7 @@ float getTemp() {
 }
 
 void tempController(int minHeat, int maxHeat, float temp) {
-  if(temp < minHeat) {
+  if(temp < minHeat) {  //if the temperature is too low turn on the heater and turn off the fan if its on
     if(fan) {
       void fanOff();
       fan = false;
@@ -46,7 +46,7 @@ void tempController(int minHeat, int maxHeat, float temp) {
     void heatingOn();
     heater = true;
   }
-  else if(temp > maxHeat) {
+  else if(temp > maxHeat) {   //if the temperature is too high turn on the fan and turn off the heater if its on
     if(heater) {    //ensure heater is off
       void heatingOff();
       heater = false;
@@ -54,7 +54,7 @@ void tempController(int minHeat, int maxHeat, float temp) {
     void fanOn();
     fan = true;
   }
-  else {
+  else {    //if the temperature is within desired range turn off all components
     void heatingOff();  
     void fanOff();
     heater = false;
