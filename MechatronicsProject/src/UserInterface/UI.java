@@ -14,131 +14,182 @@ public class UI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFrameSettings = new javax.swing.JFrame();
-        jLabelAbout1 = new javax.swing.JLabel();
-        jMenuBar3 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuHomesettings = new javax.swing.JMenuItem();
-        jMenuSettings = new javax.swing.JMenuItem();
-        jMenuAboutsettings = new javax.swing.JMenuItem();
-        jFrameAbout = new javax.swing.JFrame();
-        jLabelAbout = new javax.swing.JLabel();
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuHomeabout = new javax.swing.JMenuItem();
-        jMenuSettingsabout = new javax.swing.JMenuItem();
-        jMenuAbout = new javax.swing.JMenuItem();
-        exitButton = new javax.swing.JButton();
-        jLabelOccupants = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanelHome = new javax.swing.JPanel();
+        jTextOccupants = new javax.swing.JTextField();
+        jTextWeather = new javax.swing.JTextField();
+        jTextHumidity = new javax.swing.JTextField();
+        jTextRoomTemp = new javax.swing.JTextField();
+        jLabelRoomTemp = new javax.swing.JLabel();
         jLabelHumidity = new javax.swing.JLabel();
         jLabelWeather = new javax.swing.JLabel();
-        jTextRoomTemp = new javax.swing.JTextField();
-        jTextHumidity = new javax.swing.JTextField();
-        jTextWeather = new javax.swing.JTextField();
-        jLabelRoomTemp = new javax.swing.JLabel();
-        jTextOccupants = new javax.swing.JTextField();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuHome = new javax.swing.JMenuItem();
-        jMenuSettingshome = new javax.swing.JMenuItem();
-        jMenuAbouthome = new javax.swing.JMenuItem();
-
-        jLabelAbout1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabelAbout1.setText("Settings");
-
-        jMenu3.setText("Menu");
-
-        jMenuHomesettings.setText("Home");
-        jMenuHomesettings.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuHomesettingsActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuHomesettings);
-
-        jMenuSettings.setText("Settings");
-        jMenu3.add(jMenuSettings);
-
-        jMenuAboutsettings.setText("About");
-        jMenuAboutsettings.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuAboutsettingsActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuAboutsettings);
-
-        jMenuBar3.add(jMenu3);
-
-        jFrameSettings.setJMenuBar(jMenuBar3);
-
-        javax.swing.GroupLayout jFrameSettingsLayout = new javax.swing.GroupLayout(jFrameSettings.getContentPane());
-        jFrameSettings.getContentPane().setLayout(jFrameSettingsLayout);
-        jFrameSettingsLayout.setHorizontalGroup(
-            jFrameSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jFrameSettingsLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelAbout1)
-                .addContainerGap(301, Short.MAX_VALUE))
-        );
-        jFrameSettingsLayout.setVerticalGroup(
-            jFrameSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jFrameSettingsLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelAbout1)
-                .addContainerGap(255, Short.MAX_VALUE))
-        );
-
-        jLabelAbout.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabelAbout.setText("About");
-
-        jMenu2.setText("Menu");
-
-        jMenuHomeabout.setText("Home");
-        jMenuHomeabout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuHomeaboutActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuHomeabout);
-
-        jMenuSettingsabout.setText("Settings");
-        jMenu2.add(jMenuSettingsabout);
-
-        jMenuAbout.setText("About");
-        jMenuAbout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuAboutActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuAbout);
-
-        jMenuBar2.add(jMenu2);
-
-        jFrameAbout.setJMenuBar(jMenuBar2);
-
-        javax.swing.GroupLayout jFrameAboutLayout = new javax.swing.GroupLayout(jFrameAbout.getContentPane());
-        jFrameAbout.getContentPane().setLayout(jFrameAboutLayout);
-        jFrameAboutLayout.setHorizontalGroup(
-            jFrameAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jFrameAboutLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelAbout)
-                .addContainerGap(324, Short.MAX_VALUE))
-        );
-        jFrameAboutLayout.setVerticalGroup(
-            jFrameAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jFrameAboutLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelAbout)
-                .addContainerGap(255, Short.MAX_VALUE))
-        );
+        jLabelOccupants = new javax.swing.JLabel();
+        jPanelSettings = new javax.swing.JPanel();
+        jSliderMaxT = new javax.swing.JSlider();
+        jSliderMinT = new javax.swing.JSlider();
+        jLabelMaxT = new javax.swing.JLabel();
+        jLabelMinH = new javax.swing.JLabel();
+        jLabelMaxH = new javax.swing.JLabel();
+        jLabelMinT = new javax.swing.JLabel();
+        jSliderMinH = new javax.swing.JSlider();
+        jSliderMaxH = new javax.swing.JSlider();
+        jPanelAbout = new javax.swing.JPanel();
+        exitButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Smart Home System");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setName("jFrameHome"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(605, 350));
         setResizable(false);
-        setSize(new java.awt.Dimension(600, 400));
+        setSize(new java.awt.Dimension(600, 350));
+
+        jTextOccupants.setEditable(false);
+        jTextOccupants.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        jTextOccupants.setText("0");
+        jTextOccupants.setBorder(null);
+
+        jTextWeather.setEditable(false);
+        jTextWeather.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        jTextWeather.setText("0");
+        jTextWeather.setBorder(null);
+
+        jTextHumidity.setEditable(false);
+        jTextHumidity.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        jTextHumidity.setText("0");
+        jTextHumidity.setBorder(null);
+
+        jTextRoomTemp.setEditable(false);
+        jTextRoomTemp.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        jTextRoomTemp.setText("0");
+        jTextRoomTemp.setBorder(null);
+
+        jLabelRoomTemp.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabelRoomTemp.setText("Room Temperature");
+
+        jLabelHumidity.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabelHumidity.setText("Humidity");
+
+        jLabelWeather.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabelWeather.setText("Weather");
+
+        jLabelOccupants.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabelOccupants.setText("Current occupants");
+
+        javax.swing.GroupLayout jPanelHomeLayout = new javax.swing.GroupLayout(jPanelHome);
+        jPanelHome.setLayout(jPanelHomeLayout);
+        jPanelHomeLayout.setHorizontalGroup(
+            jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelHomeLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelHomeLayout.createSequentialGroup()
+                        .addComponent(jLabelOccupants)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jTextOccupants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelHomeLayout.createSequentialGroup()
+                        .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelRoomTemp)
+                            .addComponent(jLabelHumidity)
+                            .addComponent(jLabelWeather))
+                        .addGap(210, 210, 210)
+                        .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextRoomTemp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextHumidity, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextWeather, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(91, 91, 91))
+        );
+        jPanelHomeLayout.setVerticalGroup(
+            jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelHomeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextRoomTemp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoomTemp))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelHumidity)
+                    .addComponent(jTextHumidity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelWeather)
+                    .addComponent(jTextWeather, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelOccupants)
+                    .addComponent(jTextOccupants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Home", jPanelHome);
+
+        jLabelMaxT.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabelMaxT.setText("Max temperature");
+
+        jLabelMinH.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabelMinH.setText("Min humidity");
+
+        jLabelMaxH.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabelMaxH.setText("Max humidity");
+
+        jLabelMinT.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabelMinT.setText("Min temperature");
+
+        javax.swing.GroupLayout jPanelSettingsLayout = new javax.swing.GroupLayout(jPanelSettings);
+        jPanelSettings.setLayout(jPanelSettingsLayout);
+        jPanelSettingsLayout.setHorizontalGroup(
+            jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelSettingsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelMinT)
+                    .addComponent(jLabelMaxT)
+                    .addComponent(jLabelMaxH)
+                    .addComponent(jLabelMinH))
+                .addGap(182, 182, 182)
+                .addGroup(jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSliderMinH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSliderMaxH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSliderMaxT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSliderMinT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(61, Short.MAX_VALUE))
+        );
+        jPanelSettingsLayout.setVerticalGroup(
+            jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelSettingsLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addGroup(jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSliderMaxT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelMaxT))
+                .addGap(32, 32, 32)
+                .addGroup(jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelMinT)
+                    .addComponent(jSliderMinT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelMaxH)
+                    .addComponent(jSliderMaxH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGroup(jPanelSettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelMinH, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSliderMinH, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25))
+        );
+
+        jTabbedPane1.addTab("Settings", jPanelSettings);
+
+        javax.swing.GroupLayout jPanelAboutLayout = new javax.swing.GroupLayout(jPanelAbout);
+        jPanelAbout.setLayout(jPanelAboutLayout);
+        jPanelAboutLayout.setHorizontalGroup(
+            jPanelAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 626, Short.MAX_VALUE)
+        );
+        jPanelAboutLayout.setVerticalGroup(
+            jPanelAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 280, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("About", jPanelAbout);
 
         exitButton.setText("Exit");
         exitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -147,117 +198,21 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        jLabelOccupants.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabelOccupants.setText("Current occupants");
-
-        jLabelHumidity.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabelHumidity.setText("Humidity");
-
-        jLabelWeather.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabelWeather.setText("Weather");
-
-        jTextRoomTemp.setEditable(false);
-        jTextRoomTemp.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
-        jTextRoomTemp.setText("0");
-        jTextRoomTemp.setBorder(null);
-
-        jTextHumidity.setEditable(false);
-        jTextHumidity.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
-        jTextHumidity.setText("0");
-        jTextHumidity.setBorder(null);
-
-        jTextWeather.setEditable(false);
-        jTextWeather.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
-        jTextWeather.setText("0");
-        jTextWeather.setBorder(null);
-
-        jLabelRoomTemp.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabelRoomTemp.setText("Room Temperature");
-
-        jTextOccupants.setEditable(false);
-        jTextOccupants.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
-        jTextOccupants.setText("0");
-        jTextOccupants.setBorder(null);
-
-        jMenu1.setText("Menu");
-
-        jMenuHome.setText("Home");
-        jMenuHome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuHomeActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuHome);
-
-        jMenuSettingshome.setText("Settings");
-        jMenu1.add(jMenuSettingshome);
-
-        jMenuAbouthome.setText("About");
-        jMenuAbouthome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuAbouthomeActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuAbouthome);
-
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(exitButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabelHumidity)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 336, Short.MAX_VALUE)
-                                        .addComponent(jTextHumidity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabelWeather)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextWeather, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabelOccupants)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextOccupants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabelRoomTemp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextRoomTemp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(81, 81, 81)))
+                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(exitButton, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(122, 122, 122)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextRoomTemp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRoomTemp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelHumidity)
-                    .addComponent(jTextHumidity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelWeather)
-                    .addComponent(jTextWeather, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelOccupants)
-                    .addComponent(jTextOccupants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(exitButton)
                 .addContainerGap())
         );
@@ -270,32 +225,6 @@ public class UI extends javax.swing.JFrame {
         dispose();
         System.exit(0);
     }//GEN-LAST:event_exitButtonActionPerformed
-
-    private void jMenuAbouthomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAbouthomeActionPerformed
-
-    }//GEN-LAST:event_jMenuAbouthomeActionPerformed
-
-    private void jMenuHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuHomeActionPerformed
-        
-    }//GEN-LAST:event_jMenuHomeActionPerformed
-
-    private void jMenuHomeaboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuHomeaboutActionPerformed
-        //home button on About page
-        this.setVisible(false);
-        //new jFrameHome().setVisible(true);
-    }//GEN-LAST:event_jMenuHomeaboutActionPerformed
-
-    private void jMenuAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAboutActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuAboutActionPerformed
-
-    private void jMenuHomesettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuHomesettingsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuHomesettingsActionPerformed
-
-    private void jMenuAboutsettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAboutsettingsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuAboutsettingsActionPerformed
 
     public static void main(String args[]) {
 
@@ -325,29 +254,22 @@ public class UI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton exitButton;
-    private javax.swing.JFrame jFrameAbout;
-    private javax.swing.JFrame jFrameSettings;
-    private javax.swing.JLabel jLabelAbout;
-    private javax.swing.JLabel jLabelAbout1;
     private javax.swing.JLabel jLabelHumidity;
+    private javax.swing.JLabel jLabelMaxH;
+    private javax.swing.JLabel jLabelMaxT;
+    private javax.swing.JLabel jLabelMinH;
+    private javax.swing.JLabel jLabelMinT;
     private javax.swing.JLabel jLabelOccupants;
     private javax.swing.JLabel jLabelRoomTemp;
     private javax.swing.JLabel jLabelWeather;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuItem jMenuAbout;
-    private javax.swing.JMenuItem jMenuAbouthome;
-    private javax.swing.JMenuItem jMenuAboutsettings;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuBar jMenuBar3;
-    private javax.swing.JMenuItem jMenuHome;
-    private javax.swing.JMenuItem jMenuHomeabout;
-    private javax.swing.JMenuItem jMenuHomesettings;
-    private javax.swing.JMenuItem jMenuSettings;
-    private javax.swing.JMenuItem jMenuSettingsabout;
-    private javax.swing.JMenuItem jMenuSettingshome;
+    private javax.swing.JPanel jPanelAbout;
+    private javax.swing.JPanel jPanelHome;
+    private javax.swing.JPanel jPanelSettings;
+    private javax.swing.JSlider jSliderMaxH;
+    private javax.swing.JSlider jSliderMaxT;
+    private javax.swing.JSlider jSliderMinH;
+    private javax.swing.JSlider jSliderMinT;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextHumidity;
     private javax.swing.JTextField jTextOccupants;
     private javax.swing.JTextField jTextRoomTemp;
