@@ -40,9 +40,9 @@ public class UI extends javax.swing.JFrame {
         setTitle("Smart Home System");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setName("jFrameHome"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(605, 350));
+        setPreferredSize(new java.awt.Dimension(640, 380));
         setResizable(false);
-        setSize(new java.awt.Dimension(600, 350));
+        setSize(new java.awt.Dimension(640, 380));
 
         jTextOccupants.setEditable(false);
         jTextOccupants.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
@@ -212,7 +212,7 @@ public class UI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(exitButton)
                 .addContainerGap())
         );
