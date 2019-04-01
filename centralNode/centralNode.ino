@@ -29,12 +29,17 @@ void loop() {
   float temp = getTemp();
 
   tempController(minHeat,maxHeat,temp);
+
+  Serial.print("Temperature is: ");
+  Serial.println(temp);
+  Serial.print("pin val: ");
+  Serial.println(analogRead(0));
   
 }
 
 float getTemp() {
   int rawVoltage = analogRead(0);   //reads in value from analogue pin a0
-  return (rawVoltage/1024.0)*500;    //converts the raw voltage value into a temperature in celsius and returns it
+  return (rawVoltage*(0.489)-273);   //0.489 = 500/1023 which is the Kelvin val hence -273 to get Celsius //converts the raw voltage value into a temperature in celsius and returns it
 }
 
 void tempController(int minHeat, int maxHeat, float temp) {
