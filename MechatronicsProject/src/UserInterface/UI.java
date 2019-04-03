@@ -222,8 +222,7 @@ public class UI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
-        dispose();
-        System.exit(0);
+         System.exit(0);
     }//GEN-LAST:event_exitButtonActionPerformed
 
     public static void main(String args[]) {
