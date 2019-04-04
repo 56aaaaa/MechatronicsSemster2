@@ -1,0 +1,31 @@
+#include<Servo.h>
+Servo cservo;
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  cservo.attach(13);
+  Serial.println("Rolling");
+  cservo.write(95);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if (Serial.available()){
+    char mode=Serial.read();
+    switch(mode)
+    {case '1':
+    cservo.write(95);
+    Serial.println("mode1"); 
+    break;
+    case '2':
+    cservo.write(50);
+    Serial.println("mode2");
+    break;
+    case '3':
+    cservo.write(130);
+    Serial.println("mode3");
+    break;
+    }
+  }
+  
+}
